@@ -13,7 +13,7 @@
 <script>
 import CustomText from '@/components/CustomText.vue'
 export default {
-  name: 'HomeView',
+  name: 'Home',
   components: {
     CustomText,
   }
