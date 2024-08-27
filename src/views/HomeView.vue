@@ -1,18 +1,36 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>This is an Home page</h1>
+    <custom-text class="a1" tag="p">Merhaba Dünya</custom-text>
+    <custom-text class="a2" tag="p" size="small">Merhaba Dünya</custom-text>
+    <custom-text class="a3" tag="p" size="xsmall">Merhaba Dünya</custom-text>
+    <custom-text class="a4" tag="p" size="xxsmall">Merhaba Dünya</custom-text>
+
+
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import CustomText from '@/components/CustomText.vue'
 export default {
-  name: "HomeView",
+  name: 'HomeView',
   components: {
-    HelloWorld,
-  },
-};
+    CustomText,
+  }
+}
 </script>
+
+<style>
+.a1 {
+  color: #ED4956;
+}
+.a2 {
+  color: #FAFAFA;
+}
+.a3 {
+  color: #DBDBDB;
+}
+.a4 {
+  color: #C7C7C7;
+}
+</style>
