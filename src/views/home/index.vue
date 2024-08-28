@@ -1,24 +1,32 @@
 <template>
   <div class="home">
-
     <div class="timeline">
       <h1>Home</h1>
-      <Avatar :size="80"/>
+
+      <br />
+      <br />
+
+      <Post />
+
+      <br />
+      <br />
+      <br />
     </div>
 
     <div class="sidebar">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo. Quod ea non occurrentia fingunt, vincunt Aristonem; Duo Reges: constructio interrete. Quae cum dixisset paulumque institisset, Quid est?
-      </p>
+      <Avatar :size="80"/>
+      <p>Ahmet Karslı</p>
     </div>
   </div>
 </template>
 
 <script>
 import Avatar from "@/components/Avatar.vue";
+import Post from "@/components/Post.vue";
 export default {
   name: 'Home',
   components: {
+    Post,
     Avatar,
   }
 }
