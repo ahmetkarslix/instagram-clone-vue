@@ -25,7 +25,8 @@
       <ExploreFill v-if="$route.name === 'Explore'"/>
       <Explore v-else />
       </router-link>
-      <router-link to="/profile">Profile
+      <router-link to="/profile">
+        <Avatar size="26" />
       </router-link>
     </nav>
     </container>
@@ -40,9 +41,11 @@ import DirectFill from "@/icons/DirectFill.vue"
 import Explore from "@/icons/Explore.vue";
 import ExploreFill from "@/icons/ExploreFill.vue";
 import Container from "@/components/Container.vue";
+import Avatar from "@/components/Avatar.vue";
 export default {
   name: "MainHeader",
   components: {
+    Avatar,
     Container,
     Home,
     HomeFill,
